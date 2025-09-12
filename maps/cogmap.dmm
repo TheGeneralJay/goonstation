@@ -21372,12 +21372,13 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/window/reinforced{
-	dir = 4
-	},
 /obj/item/hand_labeler{
 	pixel_y = -11
 	},
+/obj/machinery/door/airlock/pyro/glass/windoor{
+	dir = 4
+	},
+/obj/mapping_helper/access/medical,
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
 "bBP" = (
@@ -28439,14 +28440,14 @@
 	dir = 1
 	},
 /obj/machinery/vending/cola/blue,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cdd" = (
-/obj/window/reinforced{
+/obj/machinery/vending/coffee,
+/obj/decal/stage_edge{
 	dir = 4
 	},
-/obj/machinery/vending/coffee,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cdf" = (
 /obj/disposalpipe/junction{
@@ -28778,29 +28779,29 @@
 /obj/machinery/status_display{
 	pixel_y = 30
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cen" = (
 /obj/table/glass/auto,
 /obj/decal/cleanable/desk_clutter,
 /obj/item/storage/box/stma_kit,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "ceq" = (
 /obj/disposalpipe/segment/mail{
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cer" = (
-/obj/window/reinforced{
-	dir = 4
-	},
 /obj/disposalpipe/segment/mail{
 	dir = 4
 	},
-/turf/simulated/floor/wood,
+/obj/decal/stage_edge{
+	dir = 4
+	},
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "ces" = (
 /obj/disposalpipe/segment/mail{
@@ -29137,7 +29138,7 @@
 /area/station/science/lobby)
 "cfA" = (
 /obj/reagent_dispensers/watertank/fountain,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cfB" = (
 /turf/simulated/floor/carpet{
@@ -29153,14 +29154,12 @@
 /area/station/medical/medbay/lobby)
 "cfD" = (
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/carpet{
-	dir = 5;
-	icon_state = "red2"
-	},
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cfE" = (
-/obj/machinery/door/window/eastleft,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/stairs/wood2/wide{
+	dir = 4
+	},
 /area/station/medical/medbay/lobby)
 "cfF" = (
 /obj/disposalpipe/segment,
@@ -29509,7 +29508,7 @@
 	dir = 8;
 	tag = ""
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cgT" = (
 /turf/simulated/floor/carpet{
@@ -29523,15 +29522,17 @@
 	},
 /area/station/medical/medbay/lobby)
 "cgW" = (
-/obj/disposalpipe/segment/mail,
-/turf/simulated/floor/carpet{
-	dir = 6;
-	icon_state = "red2"
+/obj/cable{
+	icon_state = "1-2"
 	},
-/area/station/medical/medbay/lobby)
+/obj/disposalpipe/segment/mail,
+/mob/living/carbon/human/npc/monkey,
+/turf/simulated/floor,
+/area/station/science/lobby)
 "cgX" = (
-/obj/machinery/door/window/eastright,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/stairs/wood2/wide{
+	dir = 5
+	},
 /area/station/medical/medbay/lobby)
 "cgZ" = (
 /obj/machinery/power/data_terminal,
@@ -29869,28 +29870,33 @@
 	},
 /area/station/science/lobby)
 "chZ" = (
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cia" = (
 /obj/health_scanner/floor{
 	find_in_range = 0;
 	id = "waitroom"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cib" = (
 /obj/disposalpipe/segment/mail,
-/turf/simulated/floor/wood,
+/obj/stool/chair/comfy{
+	dir = 1
+	},
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cic" = (
-/obj/stool/chair/comfy{
-	dir = 8
-	},
-/obj/window/reinforced{
+/obj/machinery/light,
+/obj/decal/stage_edge{
 	dir = 4
 	},
-/obj/machinery/light,
-/turf/simulated/floor/wood,
+/obj/shrub{
+	dir = 1;
+	icon = 'icons/obj/stationobjs.dmi';
+	icon_state = "plant"
+	},
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cie" = (
 /obj/cable{
@@ -30249,9 +30255,11 @@
 	},
 /obj/machinery/power/data_terminal,
 /obj/machinery/computer3/generic/med_data,
-/obj/window/reinforced{
+/obj/machinery/door/airlock/pyro/glass/windoor{
+	autoclose = 0;
 	dir = 1
 	},
+/obj/mapping_helper/access/medical,
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
 "cjp" = (
@@ -33307,6 +33315,7 @@
 /area/station/medical/medbay/surgery)
 "ctD" = (
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/cog2/middle,
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "ctE" = (
@@ -34100,6 +34109,9 @@
 	dir = 4
 	},
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/cog2/middle{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "cwj" = (
@@ -34274,7 +34286,7 @@
 /obj/machinery/ai_status_display{
 	pixel_y = 28
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cwO" = (
 /obj/mesh/catwalk{
@@ -35072,6 +35084,7 @@
 "cCf" = (
 /obj/disposalpipe/segment,
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/cog2/middle,
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "cCg" = (
@@ -35106,7 +35119,7 @@
 /area/station/routing/airbridge)
 "cCl" = (
 /obj/machinery/genetics_booth,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "cCo" = (
 /obj/decal/poster/wallsign/teaparty{
@@ -36480,6 +36493,7 @@
 	pixel_x = -15;
 	pixel_y = 10
 	},
+/obj/item/paper/book/from_file/medical_surgery_guide,
 /turf/simulated/floor/redwhite{
 	dir = 6
 	},
@@ -37382,6 +37396,12 @@
 	dir = 8
 	},
 /area/station/crew_quarters/market)
+"ebh" = (
+/turf/simulated/floor/carpet{
+	dir = 5;
+	icon_state = "red2"
+	},
+/area/station/medical/medbay/lobby)
 "ebD" = (
 /obj/disposalpipe/segment,
 /obj/cable{
@@ -42515,9 +42535,6 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/window/reinforced{
-	dir = 1
-	},
 /obj/item/kitchen/food_box/lollipop{
 	pixel_x = 15;
 	pixel_y = -2
@@ -42536,6 +42553,11 @@
 	},
 /obj/machinery/recharger/defibrillator{
 	pixel_y = 3
+	},
+/obj/mapping_helper/access/medical,
+/obj/machinery/door/airlock/pyro/glass/windoor{
+	autoclose = 0;
+	dir = 1
 	},
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
@@ -45730,17 +45752,17 @@
 /area/space)
 "kms" = (
 /obj/table/reinforced/auto,
-/obj/machinery/door/window/eastright{
-	name = "Pharmacy"
-	},
 /obj/machinery/phone{
 	pixel_x = 1;
 	pixel_y = -2
 	},
-/obj/mapping_helper/access/medical,
 /obj/item/device/radio/intercom/medical{
 	dir = 1
 	},
+/obj/machinery/door/airlock/pyro/glass/windoor{
+	dir = 4
+	},
+/obj/mapping_helper/access/medical,
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
 "knf" = (
@@ -45804,6 +45826,9 @@
 	},
 /obj/cable,
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/cog2/middle{
+	dir = 5
+	},
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "kpY" = (
@@ -47321,6 +47346,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/window_blinds/cog2/middle,
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "lED" = (
@@ -47440,7 +47466,6 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/east)
 "lJH" = (
-/mob/living/carbon/human/npc/monkey,
 /turf/simulated/floor/purplewhite/corner,
 /area/station/science/chemistry)
 "lJN" = (
@@ -47872,10 +47897,6 @@
 /area/station/crew_quarters/cafeteria)
 "maO" = (
 /obj/table/reinforced/auto,
-/obj/machinery/door/window/westright{
-	dir = 1;
-	name = "Pharmacy"
-	},
 /obj/cable{
 	icon_state = "4-8"
 	},
@@ -47894,9 +47915,13 @@
 	pixel_x = -1;
 	pixel_y = 3
 	},
-/obj/mapping_helper/access/medical,
 /obj/item/clipboard{
 	pixel_x = -7
+	},
+/obj/mapping_helper/access/medical,
+/obj/machinery/door/airlock/pyro/glass/windoor{
+	autoclose = 0;
+	dir = 1
 	},
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
@@ -49771,7 +49796,7 @@
 	dir = 4
 	},
 /obj/item/device/radio/intercom/medical,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "nvg" = (
 /obj/machinery/alarm{
@@ -51234,9 +51259,6 @@
 	pixel_x = -1;
 	pixel_y = 5
 	},
-/obj/item/clothing/glasses/blindfold{
-	pixel_y = -4
-	},
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 6
 	},
@@ -51494,6 +51516,16 @@
 	dir = 9
 	},
 /area/station/medical/staff)
+"oHL" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/window_blinds/cog2/middle{
+	dir = 9
+	},
+/turf/simulated/floor/plating,
+/area/station/medical/research)
 "oIq" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -52837,7 +52869,7 @@
 /obj/machinery/computer/television/small{
 	pixel_y = 8
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/seven,
 /area/station/medical/medbay/lobby)
 "pBR" = (
 /obj/cable{
@@ -53113,6 +53145,10 @@
 /obj/item/storage/firstaid/brain{
 	pixel_x = 4;
 	pixel_y = 8
+	},
+/obj/item/storage/toolbox/emergency{
+	pixel_x = -4;
+	pixel_y = -4
 	},
 /turf/simulated/floor/bluewhite{
 	dir = 6
@@ -54459,6 +54495,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
+/obj/window_blinds/cog2/middle,
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "qMc" = (
@@ -56193,6 +56230,10 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/apc/autoname_west,
+/obj/item/storage/toolbox/emergency{
+	pixel_x = -4;
+	pixel_y = -4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/storage{
 	name = "Medical Storage"
@@ -56240,7 +56281,6 @@
 	})
 "sfY" = (
 /obj/item/robodefibrillator,
-/obj/item/paper/book/from_file/medical_surgery_guide,
 /obj/machinery/light/small/floor,
 /obj/decal/stripe_caution,
 /obj/machinery/optable{
@@ -57503,26 +57543,6 @@
 /area/station/bridge)
 "tdI" = (
 /obj/table/auto,
-/obj/item/storage/box/stma_kit{
-	pixel_x = -9;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/hypospray{
-	pixel_x = 5;
-	pixel_y = 16
-	},
-/obj/item/reagent_containers/hypospray{
-	pixel_x = 10;
-	pixel_y = 8
-	},
-/obj/item/storage/toolbox/emergency{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/hand_labeler{
-	pixel_x = 1;
-	pixel_y = 3
-	},
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9
 	},
@@ -57530,6 +57550,17 @@
 	pixel_y = -10
 	},
 /obj/machinery/light_switch/east,
+/obj/machinery/recharger/defibrillator{
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_x = 10;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_x = 5;
+	pixel_y = 16
+	},
 /turf/simulated/floor/red,
 /area/station/medical/medbay/surgery)
 "teg" = (
@@ -60557,6 +60588,9 @@
 	pixel_y = 21
 	},
 /obj/machinery/light_switch/east,
+/obj/blind_switch/area/east{
+	pixel_y = -8
+	},
 /turf/simulated/floor/blue/checker,
 /area/station/medical/research)
 "vmQ" = (
@@ -60583,6 +60617,9 @@
 /area/station/crew_quarters/fitness)
 "vnq" = (
 /obj/disposalpipe/segment,
+/obj/item/device/radio/intercom/medical{
+	dir = 8
+	},
 /turf/simulated/floor/stairs/wood/wide{
 	dir = 6
 	},
@@ -60912,6 +60949,12 @@
 	},
 /turf/simulated/floor,
 /area/station/security/main)
+"vDL" = (
+/turf/simulated/floor/carpet{
+	dir = 6;
+	icon_state = "red2"
+	},
+/area/station/medical/medbay/lobby)
 "vDQ" = (
 /obj/machinery/conveyor/WE{
 	name = "cargo belt - east";
@@ -60970,6 +61013,9 @@
 	icon_state = "0-2"
 	},
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/cog2/middle{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "vHp" = (
@@ -62062,6 +62108,7 @@
 	icon_state = "0-8"
 	},
 /obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/cog2/middle,
 /turf/simulated/floor/plating,
 /area/station/medical/research)
 "wtO" = (
@@ -62195,6 +62242,13 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
+"wxi" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/window_blinds/cog2/middle{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/station/medical/research)
 "wxk" = (
 /obj/lattice{
 	dir = 4;
@@ -96806,7 +96860,7 @@ bVp
 chW
 lyD
 ckE
-bVq
+cgW
 dxk
 coq
 cAL
@@ -99821,8 +99875,8 @@ caF
 bWD
 bWD
 cCl
-cfC
-cgU
+ebh
+vDL
 cia
 maO
 mrY
@@ -100124,7 +100178,7 @@ cbQ
 cdc
 ceq
 cfD
-cgW
+cfD
 cib
 cjp
 ckL
@@ -104670,10 +104724,10 @@ cvG
 cng
 owI
 cwi
-ctD
-ctD
-ctD
-lDv
+wxi
+wxi
+wxi
+oHL
 dhj
 dgt
 pkK

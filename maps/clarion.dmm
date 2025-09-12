@@ -32981,8 +32981,6 @@
 /obj/storage/secure/closet/medical,
 /obj/item/reagent_containers/syringe/haloperidol,
 /obj/item/reagent_containers/syringe/haloperidol,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
 /turf/simulated/floor/white,
 /area/station/medical/medbay/treatment)
 "sjH" = (
